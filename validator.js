@@ -1,12 +1,23 @@
 const outputs = ['I\'m sorry', 'I understand', 'That\'s a tough situation', 'Tell me more', 'Go on', 'Why?'];
+
+const endOutputs = ['Of course', 'Anytime', 'You\'re welcome'];
+
 function pickAnOutput() {
 	numb = Math.floor(Math.random()*6);
 	response = outputs[numb];
 	return response;
 }
 
+function pickAnEndOutput() {
+	numb2 = Math.floor(Math.random()*3);
+	response = endOutputs[numb2];
+	return response;
+}
+
 function chooseOutput(input) {
 	if (input == "hi" || input == "hello") {
+    output = "Hello there. What would like to vent about?";}
+	else if (input == "Thank you" || input == "thank you" || input == "thanks") {
     output = "Hello there. What would like to vent about?";}
     else {output = pickAnOutput();}
     return output;
