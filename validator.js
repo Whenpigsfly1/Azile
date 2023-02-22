@@ -27,7 +27,14 @@ function chooseOutput(input) {
     output = "Hello there. What would like to vent about?";}
 	else if (input == "Thank you" || input == "thank you" || input == "thanks") {
     output = pickAnEndOutput();}
-    else {output = pickAnOutput();}
+    else {
+	    let n =1;
+	    if (n == 1) {
+   		output = pickABegOutput();}
+	    else {
+	    output = pickAnOutput();}
+    	    n++;
+   	 }
     return output;
   
 }
