@@ -1,6 +1,6 @@
 const outputs = ['I\'m sorry', 'I understand', 'That\'s a tough situation', 'Tell me more', 'Go on', 'Why?'];
 
-const begOutputs = ['Tell me more', 'Go on', 'Why?', 'Please continue'];
+const begOutputs = ['Tell me more', 'Go on', 'Why?', 'Please continue', '1','1','1','1','1','1','1','1','1','1','1',];
 
 const endOutputs = ['Of course', 'Anytime', 'You\'re welcome'];
 
@@ -12,7 +12,7 @@ function pickAnOutput() {
 
 function pickABegOutput() {
 	numb2 = Math.floor(Math.random()*4);
-	response = endOutputs[numb2];
+	response = begOutputs[numb2];
 	return response;
 }
 
