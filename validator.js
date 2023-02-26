@@ -11,26 +11,28 @@ function pickAnOutput() {
 }
 
 function pickABegOutput() {
-	numb2 = Math.floor(Math.random()*4);
-	response = endOutputs[numb2];
-	return response;
+  numb2 = Math.floor(Math.random()*4);
+  response = endOutputs[numb2];
+  return response;
 }
 
 function pickAnEndOutput() {
-	numb3 = Math.floor(Math.random()*3);
-	response = endOutputs[numb3];
-	return response;
+  numb3 = Math.floor(Math.random()*3);
+  response = endOutputs[numb3];
+  return response;
 }
 
+
 function chooseOutput(input) {
-	if (input == "hi" || input == "hello") {
+  if (input == "hi" || input == "hello") {
     output = "Hello there. What would like to vent about?";}
-	else if (input == "Thank you" || input == "thank you" || input == "thanks") {
+  else if (input == "Thank you" || input == "thank you" || input == "thanks") {
     output = pickAnEndOutput();}
-    else {output = pickAnOutput();}
+  else {output = pickAnOutput();}
     return output;
   
 }
+
 function addInputAndOutput(form) {
   var inputValue = form.inputbox.value;
   const newPara = document.createElement("p");
