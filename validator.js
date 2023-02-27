@@ -1,4 +1,4 @@
-const outputs = ['I\'m sorry', 'I understand', 'That\'s a tough situation', 'Tell me more', 'Go on', 'Why?', 'Aww that\'s rough'];
+const outputs = ['I\'m sorry', 'I understand', 'That\'s a tough situation', 'Tell me more', 'Go on', 'Aww that\'s rough', 'I see', 'I appreciate you sharing this with me', 'I\'m sorry you have to deal with that', 'That must be tough', 'Sounds like a hard situation', 'Keep going', 'Why do you think that is?', 'Go on'];
 
 const endOutputs = ['Of course', 'Anytime', 'You\'re welcome'];
 
@@ -7,7 +7,7 @@ const decisionOutputs = ['What do you think you should do?', 'What do you feel i
 const conundrumOutputs = ['I\'m not sure - what do you think?', 'I think that is quite a conundrum'];
 
 function pickAnOutput() {
-	numb = Math.floor(Math.random()*7);
+	numb = Math.floor(Math.random()*14);
 	response = outputs[numb];
 	return response;
 }
