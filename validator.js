@@ -44,6 +44,14 @@ function chooseOutput(rawInput) {
   }
   else if (input == "thank you" || input == "thanks" || input == "thanks for listening" || input == "thank you for listening" || input == "thank you so much") {
     output = pickAnEndOutput();}
+  else  if (input == "do you want to be my friend" || input == "do you want to be my friend?" || input == "will you be my friend" || input == "will you be my friend?") {
+    output = "I am a robot. I have no understanding of friendship.";}
+  else if (input.startsWith("what is your") == true) {
+    output = "We're here to talk about you, not me";
+  }
+  else if (input.includes("?") == true) {
+    output = "What are your thoughts on that?";
+  }
   else {output = pickAnOutput();}
     return output;
   
