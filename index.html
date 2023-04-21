@@ -1,9 +1,15 @@
-<form name="myForm" action="" method="GET">
-  What would you like to vent about? <br>
-  <input type="text" name="inputbox" value="">
-  <input type="button" name="button" value="Click" onClick="addInputAndOutput(this.form)">
+<head>
+	 <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form name="myForm" id ="myForm" action="index.html" onsubmit="addInputAndOutput(myForm);return false">
+  Vent here: <br>
+  <input type="text" id="inpubox" name="inputbox" value="">
+  <input type="button" name="button" id="button" value="Click" onClick="addInputAndOutput(this.form)">
+  <!--<input type="submit">-->
 </form>
 <div id ="text">
 <p id="demo"></p>
 </div>
-<script type="text/javascript" src="validator.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
